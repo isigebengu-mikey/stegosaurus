@@ -4,7 +4,7 @@ import secrets
 import string
 import aiofiles
 
-class security(commands.Cog):
+class Security(commands.Cog):
     def __init__(self,bot):
         self.bot = bot
 
@@ -32,4 +32,4 @@ class security(commands.Cog):
         await ctx.author.send(embed=embed)
 
 def setup(bot):
-    bot.add_cog(security(bot))
+    bot.add_cog(Security(bot))
